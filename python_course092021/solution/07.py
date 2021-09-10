@@ -2,7 +2,6 @@
 # Download COVID-19 genome sequence
 # https://transfer.ipk-gatersleben.de/upload2/Dcjrj6RO/COVID-19_genome_sequence%20.txt
 
-# Oeffnet die Sequenz
 
 seq = """ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAA
 CGAACTTTAAAATCTGTGTGGCTGTCACTCGGCTGCATGCTTAGTGCACTCACGCAGTATAATTAATAAC
@@ -433,20 +432,26 @@ GATCGAGTGTACAGTGAACAATGCTAGGGAGAGCTGCCTATATGGAAGAGCCCTAATGTGTAAAATTAAT
 TTTAGTAGTGCTATCCCCATGTGATTTTAATAGCTTCTTAGGAGAATGACAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAA"""
 
-# # Calculate the Nucleotide frequency
-# print (seq.count('G'))
-# print (seq.count('C'))
-# print (seq.count('A'))
-# print (seq.count('T'))
-#
-# import matplotlib.pyplot as plt
-# fig = plt.figure()
-# ax = fig.add_axes([0,0,1,1])
-# langs = ['G', 'C', 'A', 'T']
-# students = [5863,5492,8954,9594]
-# ax.bar(langs,students)
-# plt.show()
+# # Calculate the Nucleotide frequency (see 01.py)
+print (seq.count('G'))
+print (seq.count('C'))
+print (seq.count('A'))
+print (seq.count('T'))
+frequency = [seq.count('G'), seq.count('C'), seq.count('A'), seq.count('T')]
+
+# Barchart
+import matplotlib.pyplot as plt
+fig = plt.figure()
+ax = fig.add_axes([0,0,1,1])
+nucleotides = ['G', 'C', 'A', 'T']
+ax.bar(nucleotides,frequency)
+plt.show()
 
 # Convert DNA to RNA
-seq2 = seq.replace('T', 'U')
-print (seq2)
+# -> use code of 02.py
+
+# Calculate GC content
+# -> use code of 04.py
+
+# Convert RNA to protein
+# -> use code of 06.py
