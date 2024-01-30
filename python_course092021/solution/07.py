@@ -432,7 +432,7 @@ GATCGAGTGTACAGTGAACAATGCTAGGGAGAGCTGCCTATATGGAAGAGCCCTAATGTGTAAAATTAAT
 TTTAGTAGTGCTATCCCCATGTGATTTTAATAGCTTCTTAGGAGAATGACAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAA"""
 
-# # Calculate the Nucleotide frequency (see 01.py)
+# # Calculate the Nucleotide frequency (see 01_strings.py)
 print (seq.count('G'))
 print (seq.count('C'))
 print (seq.count('A'))
@@ -448,7 +448,7 @@ ax.bar(nucleotides,frequency)
 plt.show()
 
 # Convert DNA to RNA
-# -> use code of 02.py
+# -> use code of 02_lists.py
 
 # Calculate GC content
 # -> use code of 04.py
